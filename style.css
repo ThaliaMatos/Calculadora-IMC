@@ -6,7 +6,7 @@
 }
 
 body {
-    background: rgba(255, 192, 203, 0.547);
+    background: rgba(119, 21, 185, 0.499);
 }
 
 main {
@@ -20,7 +20,7 @@ main {
 .container {
     display: flex;
     flex-direction: column;
-    background: pink;
+    background: rgba(119, 21, 185, 0.501);
     width: 400px;
     height: 600px;
     align-items: center;
@@ -67,7 +67,7 @@ button {
     width: 300px;
     height: 40px;
     background: black;
-    color: pink;
+    color: white;
     font: bold 1.5em small-caption;
     outline: none;
     cursor: pointer;
@@ -81,7 +81,7 @@ button {
     width: 300px;
     height: 150px;
     background: black;
-    color: pink;
+    color: white;
     border-radius: 5px;
     font: italic 1.5em small-caption;
     box-shadow: 0 0 10px black;
