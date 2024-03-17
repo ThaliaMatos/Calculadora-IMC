@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(255, 192, 203, 0.547);
+}
+
+main {
+    display: flex;
+    width: 100vw;/* VW usado p largura da janela de visualização*/
+    height: 95vh;/* VH usado p altura da janela de visualização*/
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background: pink;
+    width: 400px;
+    height: 600px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;/*sombreamaento*/
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    font: bold 2.5rem small-caption;/*rem é usado para definir o tamanho da fonte  de acordo com a fonte do elemento raiz*/
+    border-bottom: solid 5px black;
+    margin-bottom: 25px;
+}
+
+.input {
+    display: flex;
+    width: 300px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.input input {
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  outline: 0;
+  font: bold 1.5rem small-caption;
+  text-align: center;
+}
+
+.input label {
+    font: bold 1.5rem small-caption;
+}
+
+button {
+    width: 300px;
+    height: 40px;
+    background: black;
+    color: pink;
+    font: bold 1.5em small-caption;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.result {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    background: black;
+    color: pink;
+    border-radius: 5px;
+    font: italic 1.5em small-caption;
+    box-shadow: 0 0 10px black;
+    padding: 20px;
+    box-sizing: border-box;/* Garante que o preenchimento seja incluído no tamanho total */
+    user-select: none;/* Impede a seleção de texto */
+}
+
+footer {
+    color: black;
+    text-align: center;
+    font: bold 17px bold;
+    
+}
