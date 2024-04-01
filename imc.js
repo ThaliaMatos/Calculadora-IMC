@@ -6,8 +6,11 @@ function imc() {
     const peso =document.getElementById('peso').value;
     const resultado =document.getElementById('resultado');
 
-    if (nome !== '' && altura !== '' && peso !== '') {
-        
+    if (nome == '' || altura == '' || peso == '') {
+        resultado.textContent = 'Preencha todos os campos!!!'  
+    } else if (altura <= 0 || peso <= 0) {
+        resultado.textContent = 'Os valores não pode ser negativo'
+    } else {
         const valorAltura = parseFloat(altura);
         const valorPeso = parseFloat(peso);
 
@@ -35,9 +38,8 @@ function imc() {
 
         resultado.textContent = `${nome} seu IMC é ${valorIMC} e você está ${classificacao}`;
 
-    } else {
-        resultado.textContent = 'Preencha todos os campos!!!'
     }
+    
 
 }
 
